@@ -1,0 +1,91 @@
+.Pcont1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 20px; /* Add spacing between items when wrapping */
+    align-items: center;
+  }
+  
+  .Pcon {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: center;
+    margin: 20px auto; /* Center the content horizontally */
+    width: 90%; /* Adjust width to fit smaller screens */
+    
+  }
+  
+  .Pcon img {
+    width: 150px;
+    height: 250px;
+    margin: 20px;
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+  }
+  
+  .Pcont2 h2 {
+    text-align: center;
+    font-size: 1.8rem; /* Adjust font size for better readability */
+  }
+  
+  .Hp1 {
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    padding: 20px;
+    text-decoration: underline rgb(197, 197, 197);
+    font-size: 1.5rem; /* Adjust font size */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .Pcon {
+      padding: 10px;
+      flex-direction: column; /* Stack items vertically */
+      align-items: center;
+      margin: 10px;
+    }
+  
+    .Pcon img {
+      width: 120px;
+      height: 180px;
+      margin: 10px;
+    }
+  
+    .Hp1 {
+      font-size: 1.2rem; /* Smaller font for header */
+      padding: 15px;
+    }
+  
+    .Pcont2 h2 {
+      font-size: 1.5rem; /* Adjust heading size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Pcon img {
+      width: 200px;
+      height: 250px;
+      margin: 8px;
+    }
+  
+    .Hp1 {
+      font-size: 1rem;
+      padding: 10px;
+    }
+  
+    .Pcont2 h2 {
+      font-size: 1.4rem;
+      text-decoration: underline;
+    }
+  }
+  .Pcon img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 2px 4px 8px black;
+    transition: 0.2s;
+  }
+  

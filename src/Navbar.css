@@ -1,0 +1,84 @@
+/* Navbar container */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(252, 243, 231);
+    padding: 5px;
+    position: relative;
+  }
+  
+  .logo1 {
+    width: 60px;
+    height: auto;
+  }
+  .link{
+   text-decoration: none;
+   color: black;
+  }
+  ul.menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    transition: all 0.3s ease;
+  }
+  
+  ul.menu li {
+    margin-left: 30px;
+    cursor: pointer;
+  }
+  
+  .menu.active {
+    flex-direction: column;
+    position: absolute;
+    top: 50px; /* Adjust depending on navbar height */
+    right: 0;
+    left: 0;
+    background-color: rgb(252, 243, 231);
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0; /* Padding for the vertical menu */
+  }
+  
+  .menu li {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Burger icon style */
+  .burger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .burger div {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Media Query for responsiveness */
+  @media (max-width: 768px) {
+    nav{
+        z-index: 1000;
+    }
+    ul.menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .burger {
+      display: block;
+    }
+  
+    /* Show menu when active */
+    .menu.active {
+      display: flex;
+    }
+  }
+  

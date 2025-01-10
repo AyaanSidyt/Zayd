@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding and borders do not affect element width/height */
+}
+
+.container1 {
+  z-index: 5;
+  background: linear-gradient(to bottom, rgb(36, 36, 255), rgb(112, 112, 255));
+  background-attachment: scroll;
+  width: 100%;
+  height: 85vh;
+  padding-top:20px ;
+}
+
+.img1 {
+  width: 100%; /* Use 100% width to adapt to smaller screens */
+  height: 95%;
+  position: absolute;
+  z-index: 100;
+}
+
+.head1 {
+  position: fixed;
+  width: 30%;
+  font-size: 4vw; /* Use vw for responsiveness */
+  color: white;
+  text-shadow: 4px 6px 8px black;
+  top: 10%; /* Keeps it visible and centered */
+ 
+}
+
+.para1 {
+  color: white;
+  width: 40%;
+  position: fixed;
+  bottom: 45%;
+  text-shadow: 4px 6px 8px black;
+
+}
+
+.headdiv {
+  position: absolute;
+  margin: 10px;
+  left: 40%;
+  top: -10px;
+  animation: slideFromTop 1s ease-in-out forwards;
+}
+
+@keyframes slideFromTop {
+  0% {
+    top: -10px;
+    opacity: 0;
+  }
+  100% {
+    top: 60px;
+    opacity: 1;
+  }
+}
+
+.btn1 {
+  background-color: blue;
+  border: none;
+  color: white;
+  position: fixed;
+  cursor: pointer;
+  top: 58%;
+  border-radius: 30px;
+  padding: 10px;
+  width: 90px;
+  box-shadow: 2px 4px 8px black;
+  z-index: 200;
+left: 44%;
+  transform: translateX(-50%); /* Ensures it's centered horizontally */
+}
+
+.div2 {
+  height: 100vh;
+  background-color: aliceblue;
+  position: relative;
+  z-index: 1005;
+  margin-top: 29px;
+  display: flex;
+  padding: 90px;
+}
+
+.logo {
+  position: fixed;
+  width: 120px;
+  z-index: 10;
+  animation: slideIn 1s ease-in-out forwards;
+  top: 10%; /* Keeps logo at top */
+  
+}
+.cont1 h2{
+  text-align: center;
+ 
+}
+.cont1{
+  align-items: center;
+  padding: 10px;
+  margin-right: 10px;
+}
+.div2 h2{
+  color: rgb(51, 48, 48);
+}
+.div2 p{
+  color: rgb(37, 37, 37);
+  font-size: 2.3vh;
+  font-weight: 600;
+}
+
+.cont3{
+  width:100%;
+}
+.cont2 h2{
+  text-align: center;
+}
+.cont2 h5{
+  font-size: 16px;
+}
+.innerdiv .cont3{
+  display: none;
+  ;
+}
+.innerdiv{
+  display: inline;
+}
+.div3{
+  height: 70vh;
+  background-color: black;
+  z-index: 1000;
+  position: relative;
+  display: flex;
+  color: #b1b1b1;
+  padding: 20px;
+}
+.cont4{
+  padding: 20px;
+  width: 800px;
+  
+}
+.cont5 img{
+  width: 420px;
+}
+/* container3 sdasasdasdasdasd */
+.cont4 h2{
+  text-align: center;
+}
+/* container3 sdasasdasdasdasd */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .head1 {
+    font-size: 5vw; /* Larger font size on smaller screens */
+    width: 50%;
+    left: 40%;
+  }
+.img1{
+  height: 80%;
+  
+}
+  .para1 {
+    width: 60%; /* Increase paragraph width on smaller screens */
+   bottom: 67%;
+    left: 40%;
+  }
+
+  .btn1 {
+    width: 80px; /* Slightly smaller button for mobile */
+    top: 35%; /* Adjust button position for smaller screens */
+  }
+
+  .logo {
+   display: none;
+  }
+  .div2{
+    display: flex;
+   height: 120vh;
+    flex-direction: column;
+    z-index: 1000; 
+    width: 100%;
+    top: -80px;
+  }
+  .div2 h5{
+    font-size: 20px;
+  }
+  .div2 .con{
+display: none;
+  }
+  .innerdiv .cont3{
+    display: inline;
+  }
+  .div3{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    height: 70vh;
+    padding: 0;
+    top: -80px;
+  }
+  .cont4{
+width: 100%;
+  }
+  .cont5 img{
+    width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .head1 {
+    font-size: 8vw; /* Font size adjustment for very small screens */
+    width: 90%;
+    left: 10%;
+    margin-right: 10px;
+  }
+  .img1{
+    height: 60%;
+    top: 40%;
+  }
+  .para1 {
+    width: 80%; /* Full-width paragraph on very small screens */
+    top: 27%;
+    left: 10%;
+    font-size: 14px;
+  }
+
+  .btn1 {
+    width: 200px; /* Further reduce button size */
+    top: 55%; /* Adjust button position for mobile */
+    left: 36%;
+    
+  }
+
+  .div2{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+   height: 140vh;
+   width: 100%;
+   top: -20px;
+   align-items: center;
+ 
+  }
+  .cont2 h5 {
+    text-align: center;
+    width: 90%;
+  }
+  .cont2 p{
+    text-align: center;
+   
+  }
+  .cont1{
+    text-align: center;
+  }
+  .cont3 img{
+    width: 350px;
+  }
+  .div3{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    height: 100vh;
+    padding: 0;
+    top: -80px;
+  }
+  .cont4{
+width: 100%;
+  }
+  .cont5 img{
+    width: 300px;
+  }
+}
+.cont6{
+  z-index: 1000;
+  background: blue;
+  position: relative;
+}

@@ -1,0 +1,146 @@
+.body{
+    background-color: aliceblue;
+}
+.ha1{
+    background-color: black;
+    color: aliceblue;
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 30px;
+}
+
+.containera1 {
+    position: relative;
+    display: inline-block; /* Ensures that the container is sized to fit the image */
+    margin-left: 250px
+
+  }
+  
+  .containera1::before {
+    content: "Zayd Packages"; /* Text you want to show on hover */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the text */
+    color: rgb(0, 217, 255); /* Text color */
+    font-size: 50px; /* Text size */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for visibility */
+    z-index: 10000; /* Ensure it's on top of the image */
+    text-decoration: underline black;
+  }
+  
+  .containera1 img {
+    width: 800px;
+    height: 300px;
+    margin: 10px;
+  }
+  
+  /* Show text when hovering over the image */
+  .containera1:hover::before {
+    opacity: 1; /* Text appears on hover */
+  }
+  .hcon1{
+    align-items: center;
+  }
+  .containera1 img:hover{
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  /* conateiner abpout 2 [ads=dsfsd=f=========================================] */
+  .hcon2{
+    display: flex;
+    padding: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .hcon2 img{
+    width: 300px;
+  }
+  .acon3 p{
+    width: 500px;
+    font-size:25px;
+    position: relative;
+    top: -60px;
+    padding: 50PX;
+    
+  }
+  .acon2 p{
+    margin-top: 10px;
+  }
+  .acon4 p{
+    margin-bottom: 10px;
+  }
+  .hcon2 img{
+    opacity: 0.5;
+    background-color: aqua;
+cursor: pointer;
+  }
+  .hcon2 img:hover{
+    opacity: 1;
+    transition:0.4s ease-in-out;
+    transform: scale(0.9);
+  }
+  /* conateiner abpout 2 [ads=dsfsd=f=========================================] */
+/* Responsive styles */
+@media (max-width: 768px) {
+    /* Adjust layout for tablets and smaller devices */
+    .containera1 {
+      margin-left: 0; /* Remove left margin */
+      width: 100%; /* Full width on smaller screens */
+    }
+  
+    .containera1 img {
+      width: 100%; /* Make the image responsive */
+      height: auto; /* Maintain aspect ratio */
+    }
+  
+    .hcon2 {
+      padding: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
+      flex-direction: column; /* Stack images vertically */
+      align-items: center; /* Center images in the column */
+    }
+  
+    .hcon2 img {
+      width: 80%; /* Make the images smaller on smaller screens */
+      margin-bottom: 20px; /* Add spacing between images */
+    }
+  
+    .acon3 p {
+      width: 100%; /* Make text paragraph full width */
+      font-size: 18px; /* Adjust font size for readability on smaller screens */
+      padding: 20px; /* Adjust padding for better spacing */
+      top: 0; /* Reset position for mobile */
+    }
+  
+    .ha1 {
+      font-size: 24px; /* Adjust header size for smaller screens */
+      padding: 20px; /* Adjust padding for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Adjust layout for mobile devices */
+    .ha1 {
+      font-size: 20px; /* Further adjust header size */
+      padding: 15px; /* Reduce padding on mobile */
+    }
+  
+    .containera1 img {
+      width: 90%; /* Ensure image fits the screen on mobile */
+      height: auto; /* Maintain aspect ratio */
+      margin-left: 10px;
+      
+    }
+  .hcon2 img{
+    opacity: 1;
+  }
+    .acon3 p {
+      font-size: 20px; /* Adjust font size */
+      padding: 15px; /* Reduce padding on mobile */
+    }
+  }
