@@ -11,7 +11,7 @@ function Footer() {
       <div class="top">
         <div class="logo-details">
           <i class="fab fa-slack"></i>
-          <span class="logo_name">CodingLab</span>
+          <span class="logo_name">Zayd Packages</span>
         </div>
         <div class="media-icons">
           <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -34,7 +34,7 @@ function Footer() {
         <ul class="box">
           <li class="link_name">Contact</li>
           <li><a href="#">+92 321-9247986</a></li>
-          <li><a href="#">contact@example.com </a></li>
+          <li><a href="#">tahseen.ahmed58@gmail.com</a></li>
         
         </ul>
       
